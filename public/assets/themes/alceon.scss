@@ -1,0 +1,432 @@
+
+@import url("../fonts/fonts-regal/fonts.css");
+
+ 
+
+$primary-color: #004a7c;
+
+$secondary-color: #3ec3ff;
+
+$background-color: #00457c;
+
+$white-color: #fff;
+
+$black-color: #000;
+
+$grey-color: #61666b;
+
+$font-regular: "proxima_nova_aregular", sans-serif;
+
+$font-bold: "proxima_novabold", sans-serif;
+
+$font-semi: "proxima_novaregular", sans-serif;
+
+ 
+
+@mixin typography($family, $weight, $size, $color) {
+
+  font-family: $family;
+
+  font-weight: $weight !important;
+
+  font-size: $size;
+
+  color: $color;
+
+}
+
+ 
+
+@mixin button-style(
+
+  $border-color,
+
+  $bg-color,
+
+  $text-color,
+
+  $radius,
+
+  $font-size
+
+) {
+
+  border: 1px solid $border-color;
+
+  line-height: 2em;
+
+  font-family: $font-bold;
+
+  font-weight: 400 !important;
+
+  font-size: $font-size;
+
+  border-radius: $radius;
+
+  color: $text-color;
+
+  background-color: $bg-color;
+
+}
+
+ 
+
+html,
+
+body {
+
+  margin: 0 auto;
+
+  height: 100vh;
+
+  background: #00457c;
+
+  font-family: "proxima_nova_aregular", sans-serif;
+
+  font-size: 0.9375rem;
+
+  line-height: 1.4;
+
+}
+
+.well-bg {
+
+  background-color: #fff;
+
+  color: #61666b;
+
+  width: 100%;
+
+  border-radius: 0;
+
+  cursor: pointer;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+h1 {
+
+  font-family: "proxima_nova_aregular", sans-serif;
+
+  color: #004a7c;
+
+  font-weight: 600 !important;
+
+  font-size: 1.9375rem;
+
+  color: #fff;
+
+  text-transform: uppercase;
+
+  font-size: 24px;
+
+  letter-spacing: 10px;
+
+  margin-bottom: 0px;
+
+  /*padding-bottom: 5px;*/
+
+}
+
+h2 {
+
+  font-family: "proxima_nova_aregular", sans-serif;
+
+  font-weight: 300 !important;
+
+  color: #004a7c;
+
+  font-size: 24px;
+
+  margin-bottom: 5px;
+
+  padding-bottom: 5px;
+
+}
+
+ 
+
+h3 {
+
+  font-family: "proxima_nova_aregular", sans-serif;
+
+  font-weight: 300 !important;
+
+  color: #004a7c;
+
+  font-size: 31px;
+
+  margin-bottom: 5px;
+
+  padding-bottom: 5px;
+
+}
+
+ 
+
+h6 {
+
+  font-family: "proxima_novabold", sans-serif;
+
+  font-weight: 600 !important;
+
+  color: #004a7c;
+
+  font-size: 16px;
+
+}
+
+ 
+
+p {
+
+  margin-top: 0;
+
+  color: #000 !important;
+
+  line-height: 1.53;
+
+  margin-bottom: 1.3125rem !important;
+
+  font-family: "proxima_nova_aregular", sans-serif;
+
+}
+
+ 
+
+a {
+
+  color: #004a7c;
+
+}
+
+ 
+
+a:hover {
+
+  color: #004a7c;
+
+}
+
+ 
+
+.logo {
+
+  margin-top: 50px;
+
+  margin-bottom: 30px;
+
+}
+
+ 
+
+#bgImg {
+
+  z-index: 1;
+
+  opacity: 0.5;
+
+}
+
+ 
+
+#bgImg img {
+
+  width: 100%;
+
+}
+
+ 
+
+#headerContainer #assistance {
+
+  width: 300px;
+
+  top: 0;
+
+  right: 0;
+
+}
+
+#headerContainer #assistance .assistance {
+
+  padding: 25px 30px;
+
+}
+
+ 
+
+#headerContainer .container {
+
+  padding-left: 70px;
+
+  padding-right: 70px;
+
+}
+
+ 
+
+.logoLeft {
+
+  padding-left: 0px !important;
+
+}
+
+ 
+
+.slateGreyGradient {
+
+  z-index: 10;
+
+  width: 300px;
+
+  font-family: "proxima_novaregular", sans-serif;
+
+  text-align: right !important;
+
+  padding-right: 40px;
+
+  height: 85px;
+
+  padding-left: 85px;
+
+  color: #fff;
+
+  position: relative;
+
+  padding-top: 9px !important;
+
+  /*background-color: #004a7c;*/
+
+  background-image: linear-gradient(to right, rgba(130, 137, 142, 0), #000);
+
+}
+
+ 
+
+.slateGreyGradient:before {
+
+  content: "";
+
+  position: absolute;
+
+  left: -85px;
+
+  top: 0;
+
+  width: 0;
+
+  height: 0;
+
+  /*border-top: 85px solid #004a7c;*/
+
+  border-left: 85px solid transparent;
+
+}
+
+.container {
+
+  z-index: 2;
+
+}
+
+ 
+
+.font-weight-semiBold {
+
+  font-weight: 600 !important;
+
+  font-family: "proxima_novaregular", sans-serif !important;
+
+}
+
+ 
+
+.btn.btn-default {
+
+  border: 1px solid #3ec3ff;
+
+  line-height: 2em;
+
+  font-family: "proxima_novabold", sans-serif;
+
+  font-weight: 400 !important;
+
+  font-size: 18px;
+
+  border-radius: 24px;
+
+  color: #3ec3ff;
+
+}
+
+.btn.btn-default:hover {
+
+  background-color: #3ec3ff;
+
+  color: #ffffff;
+
+}
+
+ 
+
+.btn.btn-inactive {
+
+  border: 1px solid #3ec3ff;
+
+  line-height: 2em;
+
+  font-family: "proxima_novabold", sans-serif;
+
+  font-weight: 400 !important;
+
+  font-size: 16px;
+
+  border-radius: 24px;
+
+}
+
+ 
+
+.btn.btn-inactive:hover {
+
+  background-color: #d8d9db;
+
+  color: #ffffff;
+
+}
+
+ 
+
+@media (min-width: 1200px) {
+
+  .container {
+
+    max-width: 970px;
+
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .logoLeft {
+
+    padding-left: 15px !important;
+
+  }
+
+}
+
+ 
+
+#content a {
+
+  font-family: "proxima_novabold", sans-serif;
+
+  font-weight: 400 !important;
+
+}
